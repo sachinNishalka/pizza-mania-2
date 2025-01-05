@@ -1,21 +1,30 @@
+import Home from './pages/Home';
+import About from './pages/About';
+import Menu from './pages/Menu';
+
 import Footer from './ui/Footer';
 import NavBar from './ui/NavBar';
-import PopularFoodItems from './ui/Section1';
-import Section2 from './ui/Section2';
-import FoodMenuSection from './ui/Section3';
 import HeroSlider from './ui/Slider';
+import FeaturesSection from './ui/FeaturesSection';
+import Aboutfood from './ui/Aboutfood';
+import Ceo from './ui/Ceo';
+import FoodGrid from './ui/Foodgrid';
+import Delivery from './ui/Dilivery';
 
 export default function App() {
   return (
     <>
       <div className="h-screen">
         <NavBar></NavBar>
+        <HeroSlider></HeroSlider>
         <main>
-          <HeroSlider></HeroSlider>
-          <PopularFoodItems></PopularFoodItems>
-          <Section2></Section2>
-          <FoodMenuSection></FoodMenuSection>
+          <Menu></Menu>
         </main>
+        <FeaturesSection></FeaturesSection>
+        <Aboutfood></Aboutfood>
+        <Ceo></Ceo>
+        <Delivery></Delivery>
+        <FoodGrid></FoodGrid>
         <Footer></Footer>
       </div>
     </>

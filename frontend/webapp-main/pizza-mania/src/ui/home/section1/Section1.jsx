@@ -1,5 +1,5 @@
 import React from 'react';
-import PromoFSec from './PromoFSec';
+import PromoFSec from '../../PromoFSec';
 const PopularFoodItems = () => {
   const foodItems = [
     { name: 'Pro Pizza', count: '10', image: './pizza.jpg' },
