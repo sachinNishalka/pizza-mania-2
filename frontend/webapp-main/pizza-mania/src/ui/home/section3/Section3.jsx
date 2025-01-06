@@ -45,7 +45,7 @@ const FoodMenuItem = ({ title, price, originalPrice, isPopular, imageUrl }) => (
   </div>
 );
 
-const FoodMenuSection = () => {
+const Section3 = () => {
   const menuItems = [
     {
       title: 'Fried Chicken With French Fries',
@@ -120,4 +120,4 @@ const FoodMenuSection = () => {
   );
 };
 
-export default FoodMenuSection;
+export default Section3;
