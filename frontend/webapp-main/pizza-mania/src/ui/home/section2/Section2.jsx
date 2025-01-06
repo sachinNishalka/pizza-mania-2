@@ -1,4 +1,5 @@
 import React from 'react';
+import MainButton from '../../MainButton';
 
 const Section2 = () => {
   return (
@@ -22,12 +23,12 @@ const Section2 = () => {
 
             {/* Button Group */}
             <div className="flex space-x-4">
-              <button className="w-36 rounded-md bg-secondaryRed px-5 py-3 font-main text-white transition-colors hover:bg-secondaryRedShade">
-                <span className="flex items-center justify-center gap-2">
-                  <img src="./Icon.png" alt="" />
-                  <span>Order Now</span>
-                </span>
-              </button>
+              <MainButton
+                buttonText="Order Now"
+                iconPath="./Icon.png"
+                backColor="bg-secondaryRed"
+                hoverColor="bg-secondaryRedShade"
+              ></MainButton>
             </div>
           </div>
 

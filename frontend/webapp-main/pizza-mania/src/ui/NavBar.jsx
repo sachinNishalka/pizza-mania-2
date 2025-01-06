@@ -1,4 +1,5 @@
 import { HiOutlineShoppingCart } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -13,18 +14,18 @@ export default function NavBar() {
 
         {/* Navigation Links */}
         <div className="hidden items-center space-x-8 md:flex">
-          <a href="#" className="text-mainBlack hover:text-secondaryRed">
+          <Link to="home" className="text-mainBlack hover:text-secondaryRed">
             Home
-          </a>
-          <a href="#" className="text-mainBlack hover:text-secondaryRed">
+          </Link>
+          <Link to="about" className="text-mainBlack hover:text-secondaryRed">
             About Us
-          </a>
-          <a href="#" className="text-mainBlack hover:text-secondaryRed">
+          </Link>
+          <Link to="menu" className="text-mainBlack hover:text-secondaryRed">
             Menu
-          </a>
-          <a href="#" className="text-mainBlack hover:text-secondaryRed">
+          </Link>
+          <Link to="contact" className="text-mainBlack hover:text-secondaryRed">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Right Section */}
