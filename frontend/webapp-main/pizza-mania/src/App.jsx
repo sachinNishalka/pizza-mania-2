@@ -6,9 +6,12 @@ import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import AppLayout from './ui/AppLayout';
 
-export default function App() {
+
+
+export default function App() { 
   return (
     <>
+
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout></AppLayout>}>
@@ -23,6 +26,7 @@ export default function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+
     </>
   );
 }
