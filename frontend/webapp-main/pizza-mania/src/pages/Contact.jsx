@@ -1,5 +1,10 @@
 import React from 'react';
+import ContactSection from '../ui/ContactSection';
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <ContactSection></ContactSection>
+    </div>
+  );
 }
