@@ -2,10 +2,10 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import About from './pages/About';
 import Home from './pages/Home';
-import Menu from './pages/Category';
 import Contact from './pages/Contact';
 import AppLayout from './ui/AppLayout';
 import Category from './pages/Category';
+import MenuItems from './ui/menu/MenuItems';
 
 export default function App() {
   return (
@@ -20,6 +20,10 @@ export default function App() {
             <Route path="home" element={<Home></Home>}></Route>
             <Route path="about" element={<About></About>}></Route>
             <Route path="category" element={<Category></Category>}></Route>
+            <Route
+              path="category/:type"
+              element={<MenuItems></MenuItems>}
+            ></Route>
             <Route path="contact" element={<Contact></Contact>}></Route>
           </Route>
         </Routes>
