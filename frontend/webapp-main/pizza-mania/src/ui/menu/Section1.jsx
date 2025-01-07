@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Section1() {
   const categories = [
@@ -6,21 +7,25 @@ export default function Section1() {
       name: 'Pro Pizza',
       image: './cat1.png',
       dishes: 12,
+      to: 'pizza',
     },
     {
       name: 'Fried Chicken & french fries',
       image: './cat2.png',
       dishes: 14,
+      to: 'chickenfries',
     },
     {
       name: 'Desserts',
       image: './cat3.png',
       dishes: 12,
+      to: 'desserts',
     },
     {
       name: 'Beverages',
       image: './cat4.png',
       dishes: 12,
+      to: 'beverages',
     },
   ];
 
@@ -36,7 +41,8 @@ export default function Section1() {
         {/* Categories Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
-            <div
+            <Link
+              to={`${category.to}`}
               key={category.name}
               className="group cursor-pointer transition-transform duration-200 hover:-translate-y-2"
             >
@@ -53,7 +59,7 @@ export default function Section1() {
                   {category.dishes} Dishes in the Menu
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
