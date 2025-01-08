@@ -20,7 +20,10 @@ export default function NavBar() {
           <Link to="about" className="text-mainBlack hover:text-secondaryRed">
             About Us
           </Link>
-          <Link to="menu" className="text-mainBlack hover:text-secondaryRed">
+          <Link
+            to="category"
+            className="text-mainBlack hover:text-secondaryRed"
+          >
             Menu
           </Link>
           <Link to="contact" className="text-mainBlack hover:text-secondaryRed">
