@@ -7,6 +7,7 @@ import AppLayout from './ui/AppLayout';
 import Category from './pages/Category';
 import MenuItems from './ui/menu/MenuItems';
 
+
 export default function App() {
   return (
     <>
