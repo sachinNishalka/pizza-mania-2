@@ -8,6 +8,7 @@ import AppLayout from './ui/AppLayout';
 
 
 
+
 export default function App() { 
   return (
     <>
@@ -26,6 +27,7 @@ export default function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      
 
     </>
   );
